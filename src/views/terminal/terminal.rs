@@ -7,7 +7,7 @@ pub fn play_game_in_terminal() {
     io::stdin()
         .read_line(&mut input)
         .expect("Failed to read line");
-    let num_human_players: u8 = input.trim().parse().unwrap_or(1); // Default to 1 if parsing fails
+    let num_human_players: u8 = input.trim().parse().unwrap_or(1); 
 
     let mut game = Game::new_with_human_players(num_human_players);
 
